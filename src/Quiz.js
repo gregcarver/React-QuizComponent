@@ -9,6 +9,10 @@ class Quiz extends Component{
         super(props);
             this.state = {quiz_position:1}
     }
+    handleResetClick(){
+        this.handleResetClick.bind(this)
+        this.setState({ quiz_position: 1})
+    }
     showNextQuestion(){
         this.setState((state)=>{
             return {quiz_position: state.quiz_position + 1}
